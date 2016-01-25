@@ -21,6 +21,7 @@ function convert(num) {
   //evaluate up to third digit
   var i = 3;
   while (i-- > 0) {
+      console.log(key[+digits.pop() + (i * 10)])
       answer = (key[+digits.pop() + (i * 10)] || "") + answer;
   }
   return Array(+digits.join("") + 1).join("M") + answer;
